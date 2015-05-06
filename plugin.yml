@@ -8,13 +8,13 @@ Description: Adds commands with information and action into the PocketMine-MP Se
 commands:
  info:
   description: "Shows information about the server"
-  usage: "/info"
+  usage: "/info <status|ip|player|op>
   permission: myplugin.example
   quit:
   description: "Kicks player from server"
-  usage: "/quit"
+  usage: "/quit [secondstilkick]
   permission: player.kick
   inv:
-  description: "Lists all items in Player Iv"
-  usage: "/inv"
+  description: "Lists items in Player Iv"
+  usage: "/inv <showall|showarmor|showitems>
   permission: inventory.BaseInventory

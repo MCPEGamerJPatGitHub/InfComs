@@ -3,6 +3,7 @@ Adds commands with information and action into the PocketMine-MP Server Software
 
 #Help Test the Plugin!
 Please help beta test this plugin. More information in the Gitter chat.
+
 [![Join the chat at https://gitter.im/DunxGit/InfComs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DunxGit/InfComs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 #How to Install this Plugin

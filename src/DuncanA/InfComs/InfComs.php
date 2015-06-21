@@ -34,7 +34,18 @@ class InfComs extends PluginBase{
          }else{
             $sender->sendMessage(TextFormat::RED . "Please run that command in-game");
          }
-      }elseif(strtolower($command->getName()) === "inv"){
-         //I'm not sure what to put here...
+      }elseif(strtolower($command->getName()) === "inv(){
+        //Stop using if, else and elseif so many times!!!
+         if($sender->hasPermission("infocom.command.inv")
+            $inv->getServer()->getPlayerInventory();
+            $player->sendMessage("§6Your inventory has been checked by a member of staff.")
+            $sender->sendMessage("§5You have completed your task. §dWell Done!")
+             }else{
+                   $sender->sendMessage("§1Command Error 503. §bYou do not have permission to use this command.")
+                   //Color only works on PocketMine 1.5
+                   }
+         }else{
+            $sender->sendMessage("§cPlease use this command in-game within 5 minutes or this server will self-destruct")
+
       }
 }

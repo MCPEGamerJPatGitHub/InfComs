@@ -38,6 +38,7 @@ class InfComs extends PluginBase{
          if($sender->hasPermission("infcoms.command.inv")
             $checkinv = $this->getServer()->getPlayerInventory();
             $player->sendMessage("Your inventory has been checked by an operator.")
-            $sender->Broadcast("$player has been checked fpr security purposes. We may contact you for some reason. If not, don't worry about it.")
-            //I hate my life. My code disappeared here ;-;
+            $sender->Broadcast("$player has been checked for security purposes. We may contact you for some reason.")
+            $player->sendMessage(TextFormat::RED . "Your data has been checked.")
+            
 }

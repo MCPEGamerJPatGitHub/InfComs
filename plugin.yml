@@ -1,7 +1,7 @@
 name: InfComs
 main: DuncanA\InfComs\InfComs.php
 Author: DuncanA
-version: 1.0
+version: 1.5
 api: [1.12.0]
 Description: Adds commands with information and action into the PocketMine-MP Server Software for Minecraft Pocket Edition.
 
@@ -18,6 +18,10 @@ commands:
   description: "Lists all items in Player Iv"
   usage: "/inv"
   permission: infcoms.command.inv
+ kill:
+  description: "Shows kill counts per player"
+  usage: "/kill"
+  permission: infocoms.command.kill
 permissions:
   infcoms:
     default: false
@@ -31,8 +35,12 @@ permissions:
             default: true
             description: Allows the player to use the info command
           infcoms.command.quit:
-            default: op
+            default: true
             description: Allows the player to use the quit command
           infcoms.command.inv:
             default: op
             description: Allows the player to use the inv command
+          infocoms.command.kill
+            default: true
+            description: Allows the player to use the kill command
+           

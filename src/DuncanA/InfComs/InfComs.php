@@ -40,5 +40,20 @@ class InfComs extends PluginBase{
             $player->sendMessage("Your inventory has been checked by an operator.")
             $sender->Broadcast("$player has been checked for security purposes. We may contact you for some reason.")
             $player->sendMessage(TextFormat::RED . "Your data has been checked.")
+      }
+      
+      if (strtolower($command->getName()) === "kill"){
+         if ($sender->hasPermission("infocoms.command.kill")){
+            $kills= $this->getServer()->getPlayerKills();
+            $sender->sendMessage("Your kills are: .$kills.!")
+         }else{
+            $sender->sendMessage("You don't have permission to use this command.")
+            $player->sendKickMessage("You have been kicked for using a command incorrectly.")
+            $player->kick();
             
-}
+    
+            
+         }
+                  }
+         }
+      }

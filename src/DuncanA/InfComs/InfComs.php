@@ -25,6 +25,7 @@ class InfComs extends PluginBase{
             }else{
                $sender->sendCommand("You don't have permission to do that!");
             }
+            return true;
          case "quit":
             if($sender instanceof Player){
                if($sender->hasPermission("infcoms.command.quit")){
@@ -35,12 +36,17 @@ class InfComs extends PluginBase{
             }else{
                $sender->sendMessage(TextFormat::RED . "Please run that command in-game");
             }
+            return true;
          case "inv":
-            if($sender->hasPermission("infcoms.command.inv")
+            if($sender->hasPermission("infcoms.command.inv"){
                $checkinv = $this->getServer()->getPlayerInventory();
                $player->sendMessage("Your inventory has been checked by an operator.");
                $sender->Broadcast("$player has been checked for security purposes. We may contact you for some reason.");
                $player->sendMessage(TextFormat::RED . "Your data has been checked.");
+               return true;
+            }else{
+               $sender->sendMessage("You don't have permission to do that!");
+            }
+         }
       }
-   }         
-}
+   } 
